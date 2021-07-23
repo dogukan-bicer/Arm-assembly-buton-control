@@ -23,7 +23,7 @@ Ana_Program
 	                           STR R0,[R1]			;çikislar  PA0 ve PA7 
 
 	                           LDR R1,=GPIOB_CRL    ;gpiob 0 ve 7 arasi port ayari registeri   
-	                           LDR R0,=0x40000004
+	                           LDR R0,=0x00000008   ;pull up olarak ayarlandi 0x00000008 pull down
 	                           STR R0,[R1]			;Girisler  PB0 ve PB7 	
 dongu
 	                           LDR R1,=GPIOB_IDR    ; input kontrol registeri
